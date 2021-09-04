@@ -1,0 +1,103 @@
+While n =/ 0 do
+r <-- m mod n
+m <-- n
+n <-- r
+return m
+
+cari nilai kpk dari 3 dan 4
+tentukan algoritma dan pseudocodenya
+
+KPK
+3 = 3, 9, 12, 15, 18, 21
+4 = 4, 12, 16, 20, 24, 28
+KPK nya adalah 12
+
+=================================================
+#include <stdio.h>
+
+int FPB(int a, int b){
+    int r = 0;
+    while(b!=0){
+        r = a % b;
+        a = b;
+        b = r;
+    }
+
+    return a;
+}
+
+int main(){
+int a=3;
+int b=4;
+int KPK=0;
+
+    KPK= a*b / FPB(a, b);
+    printf("%d", KPK);
+    return 0;
+}
+===================================================
+
+int x = manggis, y = pisang, t;
+
+    t = x;
+    x = y;
+    y = t;
+
+
+  return 0;
+
+====================================================
+Algoritma Luas Segitiga
+1. deklarasi 3 variable yakni alas, tinggi, luas.
+2. masukan nilai alas dan tinggi.
+3. masukan rumus 0.5 * alas * tinggi.
+4. menampilkan hasilnya akan terhitung.
+
+int alas = 25, tinggi = 30, luas;
+
+luas = 0.5 * 25 * 30;
+
+====================================================
+Algortima Luas Jajargenjang
+1. Deklarasikan variable atas, tinggi, luas.
+2. Masukan nilai atas.
+3. Masukan nilai tinggi.
+4. Tampilkan luas jajargenjang
+
+panjang = 5, lebar 3;
+int atas = 5, tinggi = 3, luas;
+
+luas = atas x tinggi;
+luas = 3 x 5;
+
+====================================================
+Algoritma Volume Tabung
+1. Deklarasikan variable phi, jarijari, tinggi, dan volume.
+2. Masukan nilai jarijari dan tinggi ke rumus volume tabung.
+3. Rumus volume tabung phi * r * r * t
+4. Menampilkan nilai volume tabung
+
+jari-jari = 3
+tinggi = 5
+
+int jarijari = 3, tinggi = 5, volume;
+float phi = 3.14;
+
+volume = phi * r * r * t;
+
+=====================================================
+Algoritma Volume Kerucut
+1. Deklarasikan variable phi, diameter, tinggi, jari-jari, dan volume.
+2. Diameter dibagi oleh 2 untuk dijadikan jari-jari.
+3. Masukan nilai jarijari dan tinggi ke rumus volume tabung.
+4. Rumus volume tabung 1/3 * phi * d * t
+5. Menampilkan nilai volume kerucut
+
+int diameter = 5, tinggi = 4, volume;
+float phi = 22/7
+
+jarijari = diameter/2;
+volume = 1/3 * 22/7 * 2.5 * 2.5 * 4;
+
+link anaconda
+https://www.anaconda.com/products/individual#windows
